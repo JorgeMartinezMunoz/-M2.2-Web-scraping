@@ -7,7 +7,7 @@ url = 'https://www.excelsior.com.mx/adrenalina'
 # Realizar la solicitud HTTP a la página web
 response = requests.get(url)
 
-# Verificar que la solicitud fue exitosa
+# Verificar que la solicitud fue exitosa y
 if response.status_code == 200:
     # Parsear el contenido HTML de la página
     soup = BeautifulSoup(response.content, 'html.parser')
